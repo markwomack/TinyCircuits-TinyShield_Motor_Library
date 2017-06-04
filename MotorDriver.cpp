@@ -23,9 +23,7 @@ The latest version of this library can be found at https://tiny-circuits.com/
 #include "MotorDriver.h"
 #include <inttypes.h>
 #include "Arduino.h"
-#include <Wire.h>
-
-#define _BV(bit) (1 << (bit)) 
+#include <i2c_t3.h>
 
 MotorDriver::MotorDriver(uint8_t addr)
 {
